@@ -24,4 +24,7 @@ marker.addEventListener("click", function(e) {
 
 function reCount(){
     stats.textContent = unread.length
+    if(unread.length === 0){
+        stats.style.display = "none"
+    }
 }
